@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.olavid.apps.cupandroid01.Register"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    android:layout_centerHorizontal="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:background="#fff"
+        android:layout_margin="40dp"
+        android:padding="30dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_register_full_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="FULL NAME"/>
+        <EditText
+            android:id="@+id/et_register_full_name"
+            android:textSize="14dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your full name"
+            android:textColorHint="#c1c1c1"
+            android:backgroundTint="#c1c1c1"/>
+
+        <TextView
+            android:id="@+id/tv_register_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="E-MAIL"
+            android:layout_marginTop="20dp"/>
+        <EditText
+            android:id="@+id/et_register_email"
+            android:textSize="14dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Your E-mail goes here"
+            android:textColorHint="#c1c1c1"
+            android:inputType="textEmailAddress"
+            android:backgroundTint="#c1c1c1"/>
+
+        <TextView
+            android:id="@+id/tv_register_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            android:layout_marginTop="20dp"/>
+        <EditText
+            android:id="@+id/et_register_password"
+            android:textSize="14dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="*******"
+            android:textColorHint="#c1c1c1"
+            android:inputType="textPassword"
+            android:backgroundTint="#c1c1c1"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/cb_register_agree_tos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tv_register_agree_tos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="I agree all statements in" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_register_tos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/register_TOS"
+            android:layout_marginLeft="30dp"
+            android:textColor="#00dcd8" />
+
+        <Button
+            android:id="@+id/btn_register_login"
+            android:text="Log in"
+            android:textColor="#fff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#516df7" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_register_help"
+        android:textColor="#ccc"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#00cccccc"
+        android:text="HELP"
+        android:layout_weight="0.1"/>
+
+</LinearLayout>
